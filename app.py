@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask
 import pickle as pkl
 import generate_recipe
 from keras.models import load_model
@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'hello world!'
+    return 'welcome to my ML recipe predictor!'
 
 
 @app.route('/predict/<text>')

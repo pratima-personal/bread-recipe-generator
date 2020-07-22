@@ -81,8 +81,10 @@ def make_model(vocab_size, seq_length):
 
 
 def train_model(model, X, y, path, batch_size=128, num_epochs=100):
-    checkpoint = ModelCheckpoint(path, monitor='loss', verbose=1, save_best_only=True, mode='min')
-    model.fit(X, y, batch_size=batch_size, epochs=num_epochs, verbose=1, callbacks=[checkpoint])
+    checkpoint = ModelCheckpoint(path, monitor='loss', verbose=1,
+                                 save_best_only=True, mode='min')
+    model.fit(X, y, batch_size=batch_size, epochs=num_epochs,
+              verbose=1, callbacks=[checkpoint])
     return model
 
 
