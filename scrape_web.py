@@ -33,7 +33,6 @@ if __name__ == '__main__':
     df = pd.DataFrame()
     start = 55000
     end = 64820
-    end = 55010
     with open('recipes-jul2020.txt', 'w') as f:
         for idx in range(start, end):
             recipe = get_recipe(idx)
