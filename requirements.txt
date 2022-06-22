@@ -1,6 +1,6 @@
 # packages needed to run this repo
 # python==3.7.4
-numpy==1.17.2
+numpy==1.22.0
 pandas==0.25.1
 bs4==3.8.0
 plotly==4.6.0
